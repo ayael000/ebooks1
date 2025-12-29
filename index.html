@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practical, science-backed psychology guides for entrepreneurs and creators. Reclaim your focus and master your emotions.">
+    <title>UNFOG | Practical Psychology for High Performers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="container nav-inner">
+            <a href="#" class="logo" aria-label="unfog Home">
+                <i class="ph ph-book-open-text" aria-hidden="true"></i>
+                <span>UNFOG</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#books">Collection</a>
+                <a href="#benefits">Methodology</a>
+                <a href="#reviews">Stories</a>
+                <a href="#faq">FAQ</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn btn-secondary btn-sm nav-cta" onclick="document.getElementById('books').scrollIntoView({behavior:'smooth'})">Browse Books</button>
+                
+                <div class="nav-search">
+                    <button class="nav-icon-btn" id="navSearchBtn" aria-label="Search books" aria-expanded="false">
+                        <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+                    </button>
+                    <div class="nav-search-panel" id="navSearchPanel" aria-hidden="true">
+                        <div class="nav-search-input">
+                            <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+                            <input id="navBookSearch" type="search" placeholder="Search a guide..." autocomplete="off" />
+                            <button class="nav-search-close" id="navSearchClose" aria-label="Close search">
+                                <i class="ph ph-x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="nav-search-empty" id="navSearchEmpty">No results found.</div>
+                    </div>
+                </div>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge fade-in-up">Premium Digital Guides</div>
+                <h1 class="fade-in-up delay-1">Quiet The Noise.<br>Reclaim Your Focus.</h1>
+                <p class="hero-sub fade-in-up delay-2">Stop letting distraction and anxiety dictate your day. Practical, science-backed protocols for entrepreneurs and creators who need to think clearly under pressure.</p>
+                
+                <div class="hero-actions fade-in-up delay-3">
+                    <a href="#books" class="btn btn-primary btn-lg">Explore The Guides</a>
+                    <a href="#sample" class="btn btn-secondary btn-lg">Get The Free Guide</a>
+                </div>
+
+                <div class="trust-indicators fade-in-up delay-4">
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Instant Digital Download</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <span>Encrypted & Secure</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <span>Free Lifetime Updates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Books Collection -->
+    <section id="books" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Collection</h2>
+                <p>No fluff. Just the frameworks you need to upgrade your mind.</p>
+            </div>
+            <div class="grid-3 book-grid" id="books-grid">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits/Methodology -->
+    <section id="benefits" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>The unfog Method</h2>
+                <p>Why 12,000+ high-performers trust our guides.</p>
+            </div>
+            <div class="grid-3 benefit-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    </div>
+                    <h3>Science-Backed</h3>
+                    <p>Built on cognitive psychology and behavioral science. No guesswork.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h3>Action Oriented</h3>
+                    <p>Every chapter ends with a protocol you can use today.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Community Driven</h3>
+                    <p>Join a network of growth-minded founders on the same path.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    </div>
+                    <h3>Concise Format</h3>
+                    <p>We respect your time. Read a full guide in under 60 minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3>Digital First</h3>
+                    <p>Optimized PDF and ePub files for Kindle, iPad, or desktop.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                    </div>
+                    <h3>Premium Polish</h3>
+                    <p>Beautiful typography and professional layout design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reader Stories</h2>
+                <p>Real results from real readers.</p>
+            </div>
+            <div class="grid-3 testimonial-grid" id="reviews-grid">
+                <!-- Injected via JS -->
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat">
+                    <span class="stat-number">12k+</span>
+                    <span class="stat-label">Downloads</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section id="sample" class="section email-capture-section">
+        <div class="container capture-container">
+            <div class="capture-card">
+                <div class="capture-content">
+                    <h2>Get the Free Guide: Why Your Mind Won’t Switch Off</h2>
+					<p>A short, practical PDF to help you interrupt overthinking and regain mental clarity. No cost. No spam.</p>
+                    
+                    <form class="email-form" id="sampleForm" novalidate>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="name" class="form-input" placeholder=" " required>
+                                <label for="name" class="floating-label">First Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="lastName" class="form-input" placeholder=" " required>
+                                <label for="lastName" class="floating-label">Last Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" class="form-input" placeholder=" " required>
+                                <label for="email" class="floating-label">Email Address</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Me The PDF</button>
+                    </form>
+                    
+                    <div id="successMessage" class="success-message" role="alert" aria-live="polite">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 2L15 22L11 13L2 9L22 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span>Check your inbox! Your sample is on the way.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+        <div class="container faq-container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list" role="presentation">
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>How do I receive the books?</span>
+                        <span class="icon-wrapper">
+                            <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content" aria-hidden="true">
+                        <div class="faq-inner">
+                            <p>Immediately after purchase, you will receive an email with a secure, instant download link. You can download the files as PDF or ePub formats.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Can I read on Kindle or iPad?</span>
+                        <span class="icon-wrapper">
+                            <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content" aria-hidden="true">
+                        <div class="faq-inner">
+                            <p>Yes. Our files are DRM-free and fully compatible with Kindle, Apple Books, Kobo, and any standard PDF reader application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Is there a refund policy?</span>
+                        <span class="icon-wrapper">
+                            <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content" aria-hidden="true">
+                        <div class="faq-inner">
+                            <p>Yes. If you don't find value in our guides within 30 days, simply reply to your receipt email for a full, no-questions-asked refund.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Are payments secure?</span>
+                        <span class="icon-wrapper">
+                            <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content" aria-hidden="true">
+                        <div class="faq-inner">
+                            <p>We use industry-standard SSL encryption for all transactions. We do not store your credit card information on our servers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section cta-section">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>Build a Mind That Can Handle Anything.</h2>
+                <p>Purchase today and receive our exclusive "Focus Worksheets" bonus pack for free.</p>
+                <a href="#books" class="btn btn-primary btn-lg">Shop The Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="ph ph-book-open-text" aria-hidden="true"></i>
+                        <span>unfog</span>
+                    </div>
+                    <p>Premium digital resources for the modern mind.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="TikTok">
+                            <i class="ph ph-tiktok-logo" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#books">Collection</a></li>
+                        <li><a href="#benefits">Methodology</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2026 unfog. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    
+    <!-- Details Modal -->
+    <div id="detailsModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal modal-lg">
+            <button class="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-content" id="modalContent">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Access Modal -->
+    <div id="accessModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal modal-sm">
+            <button class="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-header">
+                <h3>Choose Your Path</h3>
+                <p>Secure your copy of the guide below.</p>
+            </div>
+            <div class="modal-body">
+                <div class="access-options">
+                    <button class="access-card" id="optionA">
+                        <div class="access-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                        </div>
+                        <div class="access-info">
+                            <h4>Instant Access (Recommended) <span style="background: var(--accent-surface); color: var(--accent-primary); font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-left: 8px; vertical-align: middle; border: 1px solid var(--accent-ring);">Most Popular</span></h4>
+                            <p>Download now • Lifetime updates • Bonuses included</p>
+                        </div>
+                        <div class="access-arrow">&rarr;</div>
+                    </button>
+                    
+                    <button class="access-card" id="optionB">
+                        <div class="access-icon">
+                            <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </div>
+                        <div class="access-info">
+                            <h4>Get It for Free</h4>
+                            <p>Complete 2 quick offers (about 2–3 minutes)</p>
+                        </div>
+                        <div class="access-arrow">&rarr;</div>
+                    </button>
+                </div>
+                
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 16px; text-align: center; line-height: 1.5;"><strong>Why free?</strong> These partner offers help fund our guides so we can give them away. No credit card required.</p>
+                
+                <div style="margin-top: 32px; border-top: 1px solid var(--border-subtle); padding-top: 24px;">
+                    <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-main); margin-bottom: 12px; text-align: center;">Comparison</p>
+                    <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse; color: var(--text-body);">
+                        <thead>
+                            <tr style="border-bottom: 1px solid var(--border-subtle);">
+                                <th style="text-align: left; padding: 8px 0; font-weight: 500; color: var(--text-muted);">Feature</th>
+                                <th style="text-align: center; padding: 8px 0; font-weight: 600; color: var(--text-main);">Instant</th>
+                                <th style="text-align: center; padding: 8px 0; font-weight: 500; color: var(--text-muted);">Free</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">Speed</td>
+                                <td style="text-align: center; padding: 8px 0; border-bottom: 1px solid var(--border-subtle); color: var(--accent-primary); font-weight: 600;">Immediate</td>
+                                <td style="text-align: center; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">~3 Mins</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">Bonuses</td>
+                                <td style="text-align: center; padding: 8px 0; border-bottom: 1px solid var(--border-subtle); color: var(--accent-primary); font-weight: 600;">Included</td>
+                                <td style="text-align: center; padding: 8px 0; border-bottom: 1px solid var(--border-subtle);">None</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 0;">Support Author</td>
+                                <td style="text-align: center; padding: 8px 0; color: var(--accent-primary); font-weight: 600;">Directly</td>
+                                <td style="text-align: center; padding: 8px 0;">Indirectly</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ebooks-data.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
