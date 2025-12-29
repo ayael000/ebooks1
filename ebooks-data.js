@@ -6,8 +6,8 @@ window.BOOKS_DATA = [
                     desc: "You reach the end of the day ready to rest. But when the lights go off, your mind turns on. This guide explains what keeps sleep away, and how to let it return naturally.",
                     longDesc: "Why Your Mind Races in Bed and How to Calm Your Body for Deep Sleep.<br><br>You reach the end of the day tired enough to rest. But the moment everything goes quiet, your mind becomes louder.<br><br>Thoughts line up. Moments replay. Tomorrow starts forming itself.<br><br>This is not a discipline issue. It is what happens when the body never fully leaves alert mode.<br><br>This guide explains why nights trigger mental activity, and how rest becomes possible once the body feels safe enough to let go. Sleep does not need to be chased. It needs space.",
                     price: "$7.99",
-                    paidLink: "https://your-paid-link.com/book-1",
-                    freeLink: "https://your-free-link.com/book-1",
+                    paidLink: "https://github.com/",
+                    freeLink: "https://github.com/"
                     image: "https://i.ibb.co/vCRSj7Yc/file-000000002578720aaa38d9dc4d254f60.png",
                     outcomes: ["Understand why your mind turns on at night", "Stop feeding the bedtime thought loop", "Create the conditions that let sleep return"]
                 },
